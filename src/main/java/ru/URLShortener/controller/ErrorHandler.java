@@ -1,4 +1,4 @@
-package ru.URLShortener.URLShortener.controller;
+package ru.URLShortener.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

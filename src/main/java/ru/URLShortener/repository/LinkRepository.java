@@ -1,7 +1,7 @@
-package ru.URLShortener.URLShortener.repository;
+package ru.URLShortener.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.URLShortener.URLShortener.entity.Link;
+import ru.URLShortener.entity.Link;
 import java.util.Optional;
 
 public interface LinkRepository extends JpaRepository<Link, Long> {

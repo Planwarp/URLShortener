@@ -1,4 +1,4 @@
-package ru.URLShortener.URLShortener.entity;
+package ru.URLShortener.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
