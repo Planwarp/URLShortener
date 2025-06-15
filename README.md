@@ -23,7 +23,7 @@
 Пример запроса:
 ```json
 {
-  "longUrl": "https://example.com"
+  "longUrl": "https://vk.com"
 }
 ````
 
@@ -32,7 +32,7 @@
 ```json
 {
   "id": 3,
-  "longUrl": "https://example.com",
+  "longUrl": "https://vk.com",
   "shortUrl": "xY7p2q.ru",
   "createdAt": "2025-06-15T16:24:00Z",
   "expiresAt": "2025-06-15T16:34:00Z"
@@ -58,7 +58,7 @@
 ```json
 {
   "id": 1,
-  "longUrl": "https://example.com",
+  "longUrl": "https://vk.com",
   "shortUrl": "xY7p2q.ru",
   "createdAt": "2025-06-15T16:24:00Z",
   "expiresAt": "2025-06-15T16:34:00Z"
@@ -89,7 +89,7 @@
 
 Успешный ответ:
 
-* 302 Found с заголовком `Location: https://example.com`
+* 302 Found с заголовком `Location: https://vk.com`
 
 Ошибки:
 
@@ -182,7 +182,7 @@ API является автономным. Возможные клиенты: в
 
 ```json
 {
-  "longUrl": "https://example.com"
+  "longUrl": "https://vk.com"
 }
 ```
 
@@ -200,5 +200,10 @@ API является автономным. Возможные клиенты: в
 http://localhost:8080/xY7p2q или http://localhost:8080/xY7p2q.ru
 ```
 
-Редирект происходит автоматически на `https://example.com`.
+Редирект происходит автоматически на `https://vk.com`.
 
+Для проверки содержимого базы данных используется веб-интерфейс H2. После запуска приложения можно открыть:
+```
+http://localhost:8080/h2-console
+```
+и подключиться к базе, чтобы просматривать таблицу LINK. Там сохраняются все данные о ссылках, включая исходные и короткие URL, дату создания и время истечения.
