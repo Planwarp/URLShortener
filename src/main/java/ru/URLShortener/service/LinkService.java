@@ -59,7 +59,6 @@ public class LinkService {
         return expired;
     }
 
-    // Генерим короткий код
     private String generateShortCode() {
         String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random rand = new Random();
